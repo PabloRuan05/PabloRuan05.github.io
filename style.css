@@ -74,6 +74,8 @@ header {
     border-radius: 15px;
 }
 
+
+
 .imgperfil {
     margin-top: 30px;
     width: 400px ;
@@ -109,6 +111,8 @@ h2 {
     background-color: #f0f0f0;
     width: 500px;
     height: 300px;
+    /* width: 31.25rem;
+    height: 18.75rem; */
     border-radius: 15px;
     flex-direction: column;
     align-items: center;
@@ -239,3 +243,32 @@ h2 {
     align-items: center;
     
 }
+
+@media screen and (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        width: 100%;
+    }
+    #navbar .logo {
+        font-size: 45px;
+    }
+    #Sobre {
+        flex-direction: column;
+    }
+
+    picture {
+        display: flex;
+        justify-content: center;  
+    }
+
+    .imgperfil {
+        justify-content: center;
+    }
+
+    #Projetos .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
