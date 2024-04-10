@@ -300,6 +300,10 @@ footer>p>a {
         flex-direction: column;
     }
 
+    #Sobre .textabout {
+        font-size: 15px;
+    }
+
     picture {
         display: flex;
         justify-content: center;
@@ -314,8 +318,14 @@ footer>p>a {
     }
 
     #Projetos .container {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    #Projetos .container .card {
+        width: 400px;
+        height: 280px;
+    } 
 
 }
