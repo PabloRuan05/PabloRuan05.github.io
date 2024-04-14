@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Pablo Muniz - Portfólio</title>
     <link rel="shortcut icon" href="/img/iconedomeusite.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <body>
     <header>
-      <nav id="navbar">
+      <nav class="animate__animated animate__fadeInDown" id="navbar">
         <a class="logo" href="index.html">Pablo Muniz</a>
         <ul id="linknav">
           <li><a href="#Projetos">Projetos</a></li>
@@ -23,19 +27,21 @@
       </nav>
     </header>
     <main>
-      <div id="Sobre">
+      <div class="animate__animated animate__fadeInDown" id="Sobre">
         <div class="perfil">
           <picture>
-            <img class="imgperfil" src="/img/IMG_4612.JPG" alt="" />
+            <img class="imgperfil" src="/img/34.png" alt="" />
           </picture>
         </div>
         <div class="textabout">
           <h1>Desenvolvedor Full-Stack.</h1>
-          <p>Pablo Ruan Aroucha Muniz</p>
+          <p>Sou um dev que está sempre em busca de novas formas de 
+            aperfeiçoar meus conhecimentos e trabalhar em projetos desafiadores e complexos.
+            <br>Principais tecnologias: HTML, CSS, JavaScript, C#, Typescript, Angular, Node.Js, Git, GitHub e Figma.
+            </p>
         </div>
       </div>
-
-      <div id="Projetos">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-center"   id="Projetos">
         <h2>Projetos</h2>
         <div class="container">
           <div class="card">
@@ -55,8 +61,7 @@
           </div>
         </div>
       </div>
-
-      <div id="Formação">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-center"   id="Formação">
         <h2>Formação</h2>
         <div class="container2">
           <div class="card2">
@@ -67,17 +72,12 @@
           </div>
         </div>
       </div>
-
-      <div id="Contatos">
+      <div data-aos="zoom-in" id="Contatos">
         <h2>Contatos</h2>
         <div class="gradebutton">
           <button class="Linkedin">
             <i style="font-size: 24px" class="fa">&#xf08c;</i
-            ><a
-              target="_blank"
-              href="https://www.linkedin.com/in/pablo-muniz-641544267/"
-              >Linkedin</a
-            >
+            ><a target="_blank" href="https://www.linkedin.com/in/pablo-muniz-641544267/">Linkedin</a >
           </button>
           <button class="GitHub">
             <i style="font-size: 24px" class="fa">&#xf09b;</i
@@ -93,13 +93,17 @@
           </button>
           <button class="Curriculo">
             <i style="font-size: 24px" class="fa">&#xf1c1;</i>
-            <a target="_blank" href="">Curriculo</a>
+            <a target="_blank" href="https://drive.google.com/file/d/1QZy6dkqqdlpLEx2dQKJt9lZyO5C-G-QY/view?usp=drive_link">Curriculo</a>
           </button>
         </div>
       </div>
     </main>
     <footer>
-      <p>Designed and coded by <a href="">Pablo Muniz</a></p>
+      <p>Designed and coded by <a href="https://pabloruan05.github.io/">Pablo Muniz</a></p>
     </footer>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

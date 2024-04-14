@@ -1,17 +1,18 @@
+/*CSS GERAL*/
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 html {
     scroll-behavior: smooth;
 }
 
+/*HEADER CSS*/
 header {
     background-color: #f7f7f7;
 }
-
 #navbar {
     display: flex;
     background-color: #f7f7f7;
@@ -22,7 +23,6 @@ header {
     padding: 0 1rem;
     margin: 0 auto;
 }
-
 #navbar .logo {
     text-decoration: none;
     color: black;
@@ -32,14 +32,11 @@ header {
     font-weight: 600;
     font-style: normal;
 }
-
 #linknav {
     list-style: none;
     display: flex;
     gap: 15px;
 }
-
-
 #linknav>li>a {
     text-decoration: none;
     font-size: 30px;
@@ -49,14 +46,12 @@ header {
     font-style: normal;
     color: black;
 }
-
 #linknav>li>a:hover {
     color: rgb(0, 153, 255);
     text-decoration: underline;
     transition: color 400ms
 }
-
-
+/*SEÇÃO Sobre CSS*/
 #Sobre {
     display: flex;
     max-width: 1200px;
@@ -65,23 +60,21 @@ header {
     margin-top: 30px;
 
 }
-
-
 #Sobre .textabout {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    color: black;
-    background-color: #f7f7f7;
+    color: rgb(0, 0, 0);
+    /* background-color: #f7f7f7; */
     margin-top: 30px;
     margin-left: 20px;
     font-size: 25px;
     border-radius: 15px;
 }
-
-
-
+#Sobre .textabout>p {
+    margin-top: 20px;
+}
 .imgperfil {
     max-width: 400px;
     max-height: 400px;
@@ -89,13 +82,13 @@ header {
     height: auto;
     border-radius: 50%;
     aspect-ratio: 1/1;
+    object-fit: cover;
 
 }
-
+/*SEÇÃO Projetos CSS*/
 #Projetos {
     margin-top: 35px;
 }
-
 h2 {
     text-align: center;
     color: black;
@@ -105,7 +98,6 @@ h2 {
     font-style: normal;
     font-size: 35px;
 }
-
 #Projetos .container {
     margin-top: 10px;
     display: flex;
@@ -113,7 +105,6 @@ h2 {
     flex-direction: row;
     justify-content: center;
 }
-
 #Projetos .container .card {
     display: flex;
     background-color: #f0f0f0;
@@ -125,7 +116,6 @@ h2 {
     flex-direction: column;
     align-items: center;
 }
-
 #Projetos .container .card>p {
     color: rgb(0, 0, 0);
     text-align: center;
@@ -136,9 +126,6 @@ h2 {
     font-style: normal;
     margin-top: 5px
 }
-
-
-
 .acessar {
     background-color: rgb(0, 0, 0);
     border-color: rgb(190, 190, 190);
@@ -147,7 +134,12 @@ h2 {
     height: 40px;
     margin-top: 5px;
 }
-
+.acessar:hover{
+    background-color: rgb(0, 153, 255);
+}
+.acessar>a:hover{
+    color: #000000;
+} 
 .acessar>a {
     color: white;
     text-decoration: none;
@@ -158,13 +150,11 @@ h2 {
     font-size: 20px;
 }
 
-/*FORMAÇÃO*/
-
+/*/*SEÇÃO Formação CSS*/
 #Formação {
     margin-top: 35px;
 
 }
-
 #Formação .container2{
     margin-top: 10px;
     display: flex;
@@ -187,39 +177,34 @@ img {
     max-width: 650px;
     max-height: 400px;
 }
-
-
+/*/*SEÇÃO Contatos CSS*/
 #Contatos {
     margin-top: 35px;
+    /* background-color: #7e7e7e; */
     
 }
-
 /*Butoes*/
-
 .gradebutton {
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
 }
-
 .Linkedin {
     width: 150px;
     height: 40px;
     border-radius: 20px;
     border-color: #008fd1;
     background-color: #008fd1;
+    /* margin-top: 10px; */
 }
-
 .Linkedin>a {
     font-size: 20px;
     color: white;
     text-decoration: none;
     text-align: center;
     align-items: center;
-
 }
-
 .GitHub {
     width: 150px;
     height: 40px;
@@ -228,16 +213,13 @@ img {
     background-color: #171515;
     color: white;
 }
-
 .GitHub>a {
     font-size: 20px;
     color: white;
     text-decoration: none;
     text-align: center;
     align-items: center;
-
 }
-
 .Email {
     width: 150px;
     height: 40px;
@@ -245,16 +227,13 @@ img {
     border-color: #7e7e7e;
     background-color: #7e7e7e;
 }
-
 .Email>a {
     font-size: 20px;
     color: white;
     text-decoration: none;
     text-align: center;
     align-items: center;
-
 }
-
 .Telefone {
     width: 150px;
     height: 40px;
@@ -262,33 +241,29 @@ img {
     border-color: #7e7e7e;
     background-color: #7e7e7e;
 }
-
 .Telefone>a {
     font-size: 20px;
     color: white;
     text-decoration: none;
     text-align: center;
     align-items: center;
-
 }
-
 .Curriculo {
     width: 150px;
     height: 40px;
     border-radius: 20px;
     border-color: #7e7e7e;
     background-color: #7e7e7e;
+    /* margin-bottom: 10px; */
 }
-
 .Curriculo>a {
     font-size: 20px;
     color: white;
     text-decoration: none;
     text-align: center;
     align-items: center;
-
 }
-
+/*FOOTER CSS*/
 footer {
     display: flex;
     justify-content: center;
@@ -298,52 +273,43 @@ footer {
     width: 100%;
     margin-top: 10px;
 }
-
 footer>p {
     color: #ffffff;
     font-size: 1rem;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
 }
-
 footer>p>a {
     color: rgb(0, 225, 255);
     text-decoration: none;
 }
-
+/*RESPONSIVIDADE*/
 @media screen and (max-width: 768px) {
     html {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-
     #navbar {
         flex-direction: column;
         /* width: 100%; */
     }
-
     #linknav>li>a {
         font-size: 25px;
     }
-
     #navbar .logo {
         font-size: 40px;
     }
-
     #Sobre {
         flex-direction: column;
     }
-
     #Sobre .textabout {
         font-size: 15px;
     }
-
     picture {
         display: flex;
         justify-content: center;
     }
-
     .imgperfil {
         justify-content: center;
         max-width: 300px;
@@ -351,31 +317,25 @@ footer>p>a {
         width: auto;
         height: auto;
     }
-
     #Projetos .container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     #Projetos .container .card {
         width: 400px;
         height: 280px;
     } 
-
     #Formação .container2 {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
     #Formação .container2 .card2 {
         width: 400px;
         height: 220px;
     }
-
     img {
         width: 400px;
     }
-
 }
