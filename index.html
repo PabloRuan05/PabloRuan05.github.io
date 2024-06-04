@@ -6,18 +6,17 @@
     <title>Pablo Muniz - Portfólio</title>
     <link rel="shortcut icon" href="/img/iconedomeusite.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
   <body>
     <header>
-      <nav class="animate__animated animate__fadeInDown" id="navbar">
+      <nav id="navbar">
         <a class="logo" href="index.html">Pablo Muniz</a>
         <ul id="linknav">
           <li><a href="#Projetos">Projetos</a></li>
@@ -27,56 +26,64 @@
       </nav>
     </header>
     <main>
-      <div class="animate__animated animate__fadeInDown" id="Sobre">
-        <div class="perfil">
-          <picture>
-            <img class="imgperfil" src="/img/34.png" alt="" />
-          </picture>
+        <div id="Sobre">
+          <div class="perfil">
+            <picture>
+              <img class="imgperfil" src="/img/34.png" alt="" />
+            </picture>
+          </div>
+          <div class="textabout">
+            <h1>Desenvolvedor Full-Stack.</h1>
+            <p>Sou um dev que está sempre em busca de novas formas de 
+              aperfeiçoar meus conhecimentos e trabalhar em projetos desafiadores e complexos.
+              <br>Principais tecnologias: HTML, CSS, JavaScript, C#, Typescript, Angular, Node.Js, Git, GitHub e Figma.
+              </p>
+          </div>
         </div>
-        <div class="textabout">
-          <h1>Desenvolvedor Full-Stack.</h1>
-          <p>Sou um dev que está sempre em busca de novas formas de 
-            aperfeiçoar meus conhecimentos e trabalhar em projetos desafiadores e complexos.
-            <br>Principais tecnologias: HTML, CSS, JavaScript, C#, Typescript, Angular, Node.Js, Git, GitHub e Figma.
-            </p>
-        </div>
-      </div>
-      <div data-aos="fade-up" data-aos-anchor-placement="top-center"   id="Projetos">
+      
+      <div id="Projetos">
         <h2>Projetos</h2>
         <div class="container">
-          <div class="card">
-            <img src="" alt="" />
-            <p>Projeto</p>
-            <button class="acessar"><a href="">Acessar</a></button>
-          </div>
-          <div class="card">
-            <img src="" alt="" />
-            <p>Projeto</p>
-            <button class="acessar"><a href="">Acessar</a></button>
-          </div>
-          <div class="card">
-            <img src="" alt="" />
-            <p>Projeto</p>
-            <button class="acessar"><a href="">Acessar</a></button>
-          </div>
-        </div>
+          <a href="https://main--tubular-genie-5ef14e.netlify.app/">
+            <div class="card">
+              <img src="/img/bloodrinks.png" alt="" />
+              <p>Projeto inspirado no Zé Delivery</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="card">
+              <img src="" alt="" />
+              <p>Projeto</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="card">
+              <img src="" alt="" />
+              <p>Projeto</p>
+            </div>
+          </a>
       </div>
-      <div data-aos="fade-up" data-aos-anchor-placement="top-center"   id="Formação">
+      <div id="Formação">
         <h2>Formação</h2>
         <div class="container2">
           <div class="card2">
             <img src="img/Certificado - Lógica de Programação com JavaScript.png" alt="">
           </div>
+        
+          <div class="card2">
+            <img src="img/senai.png" alt="">
+          </div>
+        </div>
+        <div class="container2">
           <div class="card2">
             <img src="/img/git e versionamento.png" alt="">
           </div>
           <div class="card2">
             <img src="img/figma to dev.png" alt="">
           </div>
-          
         </div>
       </div>
-      <div data-aos="zoom-in" id="Contatos">
+      <div id="Contatos">
         <h2>Contatos</h2>
         <div class="gradebutton">
           <button class="Linkedin">
@@ -105,9 +112,5 @@
     <footer>
       <p>Designed and coded by <a href="https://pabloruan05.github.io/">Pablo Muniz</a></p>
     </footer>
-
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>
