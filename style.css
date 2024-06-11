@@ -58,7 +58,8 @@ header {
 }
 #linknav>li>a:hover {
     color: rgb(0, 153, 255);
-    /* text-decoration: underline; */
+    background-color: rgb(36, 36, 36);
+    border-radius: 5px;
     transition: color 400ms
 }
 /*SEÇÃO Sobre CSS*/
@@ -305,10 +306,10 @@ footer>p>a {
         /* width: 100%; */
     }
     #linknav>li>a {
-        font-size: 25px;
+        font-size: 20px;
     }
     #navbar .logo {
-        font-size: 40px;
+        font-size: 30px;
     }
     #Sobre {
         flex-direction: column;
